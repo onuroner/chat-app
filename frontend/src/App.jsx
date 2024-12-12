@@ -9,9 +9,11 @@ import { useAuthStore } from "./store/useAuthStore"
 import { useEffect } from "react"
 import { Oval } from 'react-loader-spinner'
 import { Toaster } from "react-hot-toast"
+import { useThemeStore } from "./store/useThemeStore"
 
 const App = () => {
   const {authUser, checkAuth, isCheckingAuth} = useAuthStore();
+  const {theme} = useThemeStore();
 
   useEffect(() => {
     checkAuth();
@@ -19,6 +21,7 @@ const App = () => {
   }, [checkAuth]);
 
   console.log({authUser})
+  document.getElementsByTagName('html')[0].setAttribute('data-theme', theme);
 
   if(isCheckingAuth && !authUser){
     return (<div className="flex items-center justify-center h-screen">
@@ -37,6 +40,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      
       <Routes>
         <Route path="/" element={authUser ? <HomePage /> : <Navigate to={"/login"}/>} />
         <Route path="/signup" element={!authUser ? <SignUpPage /> : <Navigate to={"/"}/> } />
@@ -47,6 +51,7 @@ const App = () => {
 
       <Toaster />
     </div>
+    
   )
 }
 
