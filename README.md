@@ -37,4 +37,4 @@ Profile Page
   
 Settings Page (You can change the theme at this page.)
 
-![SettingsPage]([https://res-console.cloudinary.com/dpf0etnvd/thumbnails/v1/image/upload/v1734294656/c2V0dGluZ3NfcGFnZV96YXdqeTE=/drilldown](https://raw.githubusercontent.com/onuroner/chat-app/refs/heads/main/screenshots/settings_page.png))
+![SettingsPage](https://github.com/onuroner/chat-app/blob/main/screenshots/settings_page.png)
