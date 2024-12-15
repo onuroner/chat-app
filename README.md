@@ -1,5 +1,5 @@
 
-# Fullstack Chat App
+# Fullstack Chat App (MERN Stack)
 
 This project was created using Node.js for the backend and React for the frontend. I used "zustand" library for the state management in React. Socket.io library was used to create the messaging dynamics in the project. MongoDB was used as the database.
 
@@ -38,3 +38,5 @@ Profile Page
 Settings Page (You can change the theme at this page.)
 
 ![SettingsPage](https://github.com/onuroner/chat-app/blob/main/screenshots/settings_page.png)
+
+You can watch the steps from this tutorial: https://www.youtube.com/watch?v=ntKkVrQqBYY
